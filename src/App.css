@@ -1,0 +1,30 @@
+.products-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.products-container div {
+    border-radius: 6px;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.sold-products {
+    border: 1px solid darkgreen;
+    background-color: #d8ffef;
+    color: darkgreen;
+}
+
+.purchased-products {
+    border: 1px solid darkblue;
+    background-color: #d8eeff;
+    color: darkblue;
+}
+
+.to-sell-products {
+    border: 1px solid darkred;
+    background-color: #ffd6d6;
+    color: darkred;
+}
