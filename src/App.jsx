@@ -2,10 +2,17 @@ import './App.css';
 import soldTVs from "./helpers/soldTVs.js";
 import purchasedTVs from "./helpers/purchasedTVs.js";
 import toSellTVs from "./helpers/toSellTVs.js";
+import getFormattedNameTV from "./helpers/getFormattedNameTV.js";
+import {bestSellingTv} from "./constants/inventory.js";
+import getFormattedPriceTV from "./helpers/getFormattedPriceTV.js";
+import getFormattedSizesTV from "./helpers/getFormattedSizesTV.js";
 
 console.log(soldTVs());
 console.log(purchasedTVs());
 console.log(toSellTVs());
+console.log(getFormattedNameTV(bestSellingTv));
+console.log(getFormattedPriceTV(bestSellingTv.price));
+console.log(getFormattedSizesTV(bestSellingTv));
 
 function App() {
     return (
