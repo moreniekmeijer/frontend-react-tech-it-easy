@@ -1,5 +1,5 @@
-function getFormattedPriceTV(price) {
-    return `€${price},-`;
+function getFormattedPriceTV(tv) {
+    return `€${tv.price},-`;
 }
 
 export default getFormattedPriceTV;

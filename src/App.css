@@ -1,5 +1,6 @@
 .products-container {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
@@ -7,7 +8,6 @@
 .products-container div {
     border-radius: 6px;
     justify-content: center;
-    text-align: center;
     padding: 1rem;
 }
 
@@ -27,4 +27,34 @@
     border: 1px solid darkred;
     background-color: #ffd6d6;
     color: darkred;
+}
+
+.best-selling-product {
+    display: flex;
+    align-items: center;
+    max-width: 720px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    gap: 2rem;
+}
+
+.best-selling-product span {
+    max-width: 12rem;
+}
+
+.best-selling-product-info {
+    flex-direction: column;
+    text-align: left;
+}
+
+.best-selling-product-info p {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.best-selling-product-info p img {
+    max-height: 1rem;
 }
