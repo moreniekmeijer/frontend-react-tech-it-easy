@@ -52,9 +52,15 @@
 .best-selling-product-info p {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 0.4rem;
 }
 
 .best-selling-product-info p img {
     max-height: 1rem;
+}
+
+button {
+    border-radius: 6px;
+    margin: 0.2rem;
 }

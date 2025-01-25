@@ -17,9 +17,19 @@ console.log(getFormattedPriceTV(bestSellingTv));
 console.log(getFormattedSizesTV(bestSellingTv));
 
 function App() {
+    function mostSoldFirst() {
+        console.log("Meest verkocht eerst");
+    }
+    function cheapestFirst() {
+        console.log("Goedkoopste eerst");
+    }
+    function bestSportFirst() {
+        console.log("Meest geschikt voor sport eerst");
+    }
+
     return (
         <>
-            <h1>Tech it easy dashboard 7</h1>
+            <h1>Tech it easy dashboard</h1>
             <section>
                 <h2>Verkoopoverzicht</h2>
                 <div className="products-container">
@@ -53,6 +63,9 @@ function App() {
                     </div>
                 </div>
             </section>
+            <button type="button" onClick={mostSoldFirst}>Meest verkocht eerst</button>
+            <button type="button" onClick={cheapestFirst}>Goedkoopste eerst</button>
+            <button type="button" onClick={bestSportFirst}>Meest geschikt voor sport eerst</button>
         </>
     )
 }
