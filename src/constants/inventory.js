@@ -121,7 +121,7 @@ export let inventory = [
         screenQuality: 'Ultra HD/4K',
         smartTv: true,
         sourceImg: 'https://media.s-bol.com/B9n73k76VG2N/vQYEKNn/1200x734.jpg',
-        options:     [
+        options: [
             {
                 name: "wifi",
                 applicable: true,
@@ -157,7 +157,7 @@ export let inventory = [
         screenQuality: 'Ultra HD/4K',
         sourceImg: 'https://media.s-bol.com/ROVXLp4q9joq/1200x751.jpg',
         smartTv: true,
-        options:     [
+        options: [
             {
                 name: "wifi",
                 applicable: true,
@@ -347,10 +347,15 @@ const suitableForSport = inventory.map((tv) => {
 });
 console.log(suitableForSport);
 
-// // opdracht 1e:
-// const largeTvs = inventory.filter((tv) => (tv.availableSizes.some((size) => size >= 65)));
-// console.log(largeTvs);
-//
-// // opdracht 1f:
-// const ambilightTvs = inventory.filter((tv) => (tv.options.some((option) => (option.name === "ambiLight" && option.applicable))));
-// console.log("oplossing: " + ambilightTvs);
+// opdracht 1e:
+const largeTvs = inventory.filter((tv) => (tv.availableSizes.some((size) => size >= 65)));
+console.log(largeTvs);
+
+// opdracht 1f:
+const ambiLightTvs = inventory.filter((tv) => {
+    const ambiLightOption = tv.options.find((ambiLightOption) => ambiLightOption.name === "ambiLight");
+    return ambiLightOption.applicable === true;
+});
+
+console.log(ambiLightTvs);
+
