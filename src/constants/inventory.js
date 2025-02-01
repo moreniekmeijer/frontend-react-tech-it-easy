@@ -356,6 +356,5 @@ const ambiLightTvs = inventory.filter((tv) => {
     const ambiLightOption = tv.options.find((ambiLightOption) => ambiLightOption.name === "ambiLight");
     return ambiLightOption.applicable === true;
 });
-
 console.log(ambiLightTvs);
 

@@ -1,11 +1,11 @@
-.products-container {
+.dashboard {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 1rem;
 }
 
-.products-container div {
+.dashboard div {
     border-radius: 6px;
     justify-content: center;
     padding: 1rem;
@@ -29,7 +29,7 @@
     color: darkred;
 }
 
-.best-selling-product {
+.product {
     display: flex;
     align-items: center;
     max-width: 720px;
@@ -40,23 +40,24 @@
     gap: 2rem;
 }
 
-.best-selling-product span {
+.product span {
     max-width: 12rem;
 }
 
-.best-selling-product-info {
+.product-info {
     flex-direction: column;
     text-align: left;
 }
 
-.best-selling-product-info p {
+.product-info ul {
     display: flex;
+    flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     gap: 0.4rem;
 }
 
-.best-selling-product-info p img {
+.product-info ul img {
     max-height: 1rem;
 }
 
