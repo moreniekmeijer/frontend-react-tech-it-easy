@@ -40,6 +40,10 @@
     gap: 2rem;
 }
 
+.sold-out {
+    position: absolute;
+}
+
 .product span {
     max-width: 12rem;
 }
