@@ -1,0 +1,71 @@
+.dashboard {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.dashboard div {
+    border-radius: 6px;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.sold-products {
+    border: 1px solid darkgreen;
+    background-color: #d8ffef;
+    color: darkgreen;
+}
+
+.purchased-products {
+    border: 1px solid darkblue;
+    background-color: #d8eeff;
+    color: darkblue;
+}
+
+.to-sell-products {
+    border: 1px solid darkred;
+    background-color: #ffdddd;
+    color: darkred;
+}
+
+.product {
+    display: flex;
+    align-items: center;
+    max-width: 720px;
+    border: 1px solid black;
+    border-radius: 6px;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    gap: 2rem;
+}
+
+.sold-out {
+    position: absolute;
+}
+
+.product span {
+    max-width: 12rem;
+}
+
+.product-info {
+    flex-direction: column;
+    text-align: left;
+}
+
+.product-info ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.product-info ul img {
+    max-height: 1rem;
+}
+
+button {
+    border-radius: 6px;
+    margin: 0.2rem;
+}
